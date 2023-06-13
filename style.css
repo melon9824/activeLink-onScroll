@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header & nav */
+header {
+    width: 100%;
+    min-height: 3.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0 3%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #a5b1c2;
+    transition: .3s ease-in-out;
+}
+
+.logo > span {
+    color: #fa8231;
+    font-weight: 700;
+}
+
+.logo:hover{
+    transform: scale(1.03);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    color: #a5b1c2;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fa8231;
+}
+
+
+/* main */
+main {
+    margin-top: 3.5rem;
+}
+
+
+/* section */
+section {
+    min-height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    color: #fd9644;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section:nth-child(odd) {
+    background: #222;
+}
+
+section:nth-child(even) {
+    background: #333;
+}
+
+
+/* footer */
+footer {
+    background: #111;
+    padding: 1rem 3%;
+}
+
+footer .copyright__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer small,
+footer small a {
+    color: #a5b1c2;
+}
+
+footer small a {
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: all .4s;
+}
+
+footer small a:hover {
+    color: #fa8231;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+        padding: .5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-block: 2rem;
+        text-align: center;
+    }
+
+    footer .copyright__text {
+        flex-direction: column;
+        text-align: center;
+        gap: .5rem;
+    }
+}
+
