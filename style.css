@@ -107,7 +107,6 @@ footer small a {
 }
 
 footer small a {
-    font-style: italic;
     text-decoration: underline;
     text-underline-offset: 2px;
     transition: all .4s;
@@ -115,6 +114,7 @@ footer small a {
 
 footer small a:hover {
     color: #fa8231;
+    font-style: italic;
     text-decoration: none;
 }
 
