@@ -65,7 +65,12 @@ header {
 
 /* active class */
 .active {
-    color: #fa8231;
+    background: linear-gradient(90deg,
+                hsl(15, 70%, 60%) 0%,
+                hsl(20, 62%, 40%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 
