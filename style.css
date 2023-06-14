@@ -46,20 +46,25 @@ header {
     transform: scale(1.03);
 }
 
-nav ul {
+.nav__menu {
     display: flex;
     gap: 1.25rem;
 }
 
-nav ul li a {
+.nav__link {
     font-size: 1rem;
     color: #a5b1c2;
     font-weight: 500;
     transition: .3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+.nav__link:hover {
+    color: #fa8231;
+}
+
+
+/* active class */
+.active {
     color: #fa8231;
 }
 
